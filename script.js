@@ -94,4 +94,3 @@ function clearAll() {
     itemsArray = [];
     listItems = ''
 }
-

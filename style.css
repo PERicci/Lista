@@ -64,3 +64,8 @@ main {
     list-style: none;
     padding-left: 0;
 }
+
+.item {
+    background-color: red;
+    color: white;
+}
