@@ -81,35 +81,17 @@ function removeAll() {
     }
 
     document.getElementById('items').innerHTML = listItems;
-    localStorage.setItem('itemsArray', itemsArray)
+    localStorage.setItem('itemsArray', itemsArray);
 
     console.log('itemsArray ', itemsArray);
     console.log('localStorage.getItem ', localStorage.getItem('itemsArray'));
     console.log('listItems ', listItems);
 }
 
-function clear() {
-    listItems = '';
-
-    let item = document.getElementById('inputItem').value;
-
-    for (let i = 0; i < itemsArray.length; i++) {
-        if (itemsArray[i] === item) {
-            itemsArray.splice(i, 1);
-            i--
-        }
-    }
-    
-    for (let i = 0; i < itemsArray.length; i++) {
-        let e = itemsArray[i];
-        listItems = listItems + `<li class="item">${e}</li>`;
-    }
-
-    document.getElementById('items').innerHTML = listItems;
-    localStorage.setItem('itemsArray', '')
-
-    console.log('itemsArray ', itemsArray);
-    console.log('localStorage.getItem ', localStorage.getItem('itemsArray'));
-    console.log('listItems ', listItems);
+function clearAll() {
+    document.getElementById('items').innerHTML = '';
+    localStorage.clear();
+    itemsArray = [];
+    listItems = ''
 }
 
