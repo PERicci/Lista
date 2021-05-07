@@ -1,0 +1,66 @@
+body {
+    font-size: calc(10px + 1vw);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main {
+    width: 70%;
+    margin: auto;
+    
+}
+
+#listCommands {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#list {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(160, 181, 202);
+    padding: 0 0.3rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#inputItem {
+    width: 70%;
+    height: 2rem;
+    margin: 1rem 2rem 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 0.2rem 0.2rem black;
+}
+
+.btns {
+    width: 34.8%;
+    padding: 0.2rem;
+    margin: 0.3rem 0.3rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+#add {
+    background-color: greenyellow;
+    color: rgb(0, 51, 0);
+    border: solid rgb(150, 223, 42);
+}
+
+#remove, #removeAll {
+    background-color: rgb(255, 128, 128);
+    color: rgb(102, 0, 0);
+    border: solid rgb(255, 91, 91);
+}
+
+#clear {
+    background-color: red;
+    color: white;
+    border: solid rgb(139, 0, 0);
+}
+
+#items {
+    list-style: none;
+    padding-left: 0;
+}
